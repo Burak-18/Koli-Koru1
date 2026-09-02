@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KoliKoru | Akıllı Kargo Takip Sistemi</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #172033;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    .hero {
+      padding: 90px 8%;
+      text-align: center;
+      background: white;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 20px;
+      line-height: 1.6;
+      color: #596579;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 45px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    .card p {
+      color: #667085;
+      line-height: 1.6;
+    }
+
+    .how {
+      background: #eef2ff;
+    }
+
+    .steps {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .step {
+      background: white;
+      margin-bottom: 15px;
+      padding: 22px;
+      border-radius: 12px;
+    }
+
+    .step strong {
+      font-size: 19px;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      line-height: 1.8;
+      color: #596579;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    @media (max-width: 800px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">📦 KoliKoru</div>
+
+    <nav>
+      <a href="#ozellikler">Özellikler</a>
+      <a href="#nasil">Nasıl Çalışır?</a>
+      <a href="#hakkimizda">Hakkımızda</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Kargonuzu KoliKoru ile takip edin.</h1>
+
+    <p>
+      Değerli ve hassas ürünlerin taşıma sürecini takip etmeyi
+      amaçlayan akıllı kargo takip sistemi.
+    </p>
+
+    <a href="#ozellikler" class="button">
+      Sistemi Keşfet
+    </a>
+  </section>
+
+  <section id="ozellikler">
+
+    <h2 class="title">KoliKoru Neler Yapabilir?</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>📳 Darbe Takibi</h3>
+        <p>
+          Kargonun taşıma sırasında aldığı darbeleri ve
+          hareketleri algılamayı amaçlar.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🌡️ Sıcaklık Takibi</h3>
+        <p>
+          Kargo içerisindeki sıcaklık değişimlerini
+          takip etmeyi amaçlar.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>📦 Açılma Algılama</h3>
+        <p>
+          Kutunun açılıp açılmadığını tespit etmeye
+          yardımcı olacak bir sistem hedeflenmektedir.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="how" id="nasil">
+
+    <h2 class="title">Nasıl Çalışır?</h2>
+
+    <div class="steps">
+
+      <div class="step">
+        <strong>1. Cihazı kutuya yerleştir</strong>
+        <p>KoliKoru cihazı kargonun içerisine yerleştirilir.</p>
+      </div>
+
+      <div class="step">
+        <strong>2. Taşıma süreci başlar</strong>
+        <p>
+          Cihaz taşıma sırasında sensörlerden veri toplamayı amaçlar.
+        </p>
+      </div>
+
+      <div class="step">
+        <strong>3. Veriler kaydedilir</strong>
+        <p>
+          Darbe, sıcaklık ve açılma gibi olaylar kayıt altına alınır.
+        </p>
+      </div>
+
+      <div class="step">
+        <strong>4. Telefonda görüntüle</strong>
+        <p>
+          Verilerin mobil uygulama üzerinden görüntülenmesi planlanmaktadır.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="hakkimizda">
+
+    <h2 class="title">KoliKoru Hakkında</h2>
+
+    <div class="about">
+      <p>
+        KoliKoru, değerli ve hassas ürünlerin kargo sürecini
+        daha takip edilebilir hale getirmek amacıyla geliştirilen
+        bir teknoloji projesidir.
+      </p>
+
+      <br>
+
+      <p>
+        Proje şu anda geliştirme ve prototip aşamasındadır.
+        Amaç, kargo sürecindeki önemli olayları kayıt altına
+        alabilecek pratik ve ulaşılabilir bir sistem geliştirmektir.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 KoliKoru — Akıllı Kargo Takip Sistemi
+  </footer>
+
+</body>
+</html>
